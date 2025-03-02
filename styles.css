@@ -98,7 +98,7 @@ table {
   
   .site-title {
     font-size: 1.3rem;
-    color: #000; 
+    color: var(--dark-gray); 
   }
   
   .nav-links {
@@ -109,15 +109,15 @@ table {
   
   .nav-links a {
     font-weight: bold;
-    color: #000;
+    color: var(--dark-gray);
     transition: color 0.3s;
   }
   .nav-links a:hover {
-    color: #ffffff;
+    color: var(--white);
   }
   
   .menu-button {
-    background-color: #e9bb57;
+    background-color: var(--yellow);
     font-size: medium;
     color: #000000;
     border: none;
@@ -170,14 +170,14 @@ table {
   }
   
   .gold-heading {
-    color: #F7C250;
+    color: var(--yellow);
     font-size: 1.3rem;
     margin-bottom: 1rem;
   }
   
   .service-box {
-    background-color: #fff;
-    color: #000;
+    background-color: var(--white);
+    color: var(--dark-gray);
     border-radius: 8px;
     padding: 1rem;
     margin-bottom: 1rem;
@@ -225,12 +225,12 @@ table {
   }
 
   .yellow-bg {
-    background-color: #F7C250;
+    background-color: var(--yellow);
   }
 
   .white-bg {
-    background-color: #fff;
-    color: #000;
+    background-color: var(--white);
+    color: var(--dark-gray);
   }
   
 /*-------------------- PRICING --------------------*/
@@ -257,14 +257,14 @@ table {
     width: 100%;
     max-width: 280px;
     border-collapse: collapse;
-    background-color: #fff;
-    color: #000;
+    background-color: var(--white);
+    color: var(--dark-gray);
     border-radius: 8px;
     overflow: hidden;
   }
   
   caption {
-    background-color: #F7C250;
+    background-color: var(--yellow);
     font-weight: bold;
     padding: 0.5rem;
   }
@@ -284,10 +284,10 @@ table {
   
 /*-------------------- CALL TO ACTION --------------------*/
   .cta {
-    background-color: #C1445A;
+    background-color: var(--pink);
     padding: 2rem 1rem;
     text-align: center;
-    color: #fff;
+    color: var(--white);
   }
   
   .cta h2 {
