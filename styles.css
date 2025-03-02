@@ -1,0 +1,509 @@
+/*-------------------- IMPORTED FONTS --------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
+
+/*-------------------- CSS RESET --------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*-------------------- ROOT VARIABLES --------------------*/
+
+:root {
+    font-family: "Kavoon", "Inter" ;
+    font-size: 1.25em;
+    --teal:#4CA7C0;
+    --purple:#484FB7;
+    --lavendar:#6B8FE7;
+    --yellow: #E9BB57;
+    --pink: #D9526F;
+    --dark-gray: #1E1E1E;
+    --white:#ffffff;
+}
+
+/* -------GLOBAL STYLES (mobile first/small)------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #484fb7; 
+    color: #FFFFFF;
+    line-height: 1.4;
+  }
+  h1, h2, h3, .site-title, .hero-title {
+    font-family: 'Kavoon', cursive, sans-serif;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+/*-------------------- NAVIGATIN --------------------*/
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e9bb57; 
+    padding: 0.75rem 1rem;
+  }
+  
+  .site-title {
+    font-size: 1.3rem;
+    color: #000; 
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links a {
+    font-weight: bold;
+    color: #000;
+    transition: color 0.3s;
+  }
+  .nav-links a:hover {
+    color: #ffffff;
+  }
+  
+  .menu-button {
+    background-color: #e9bb57;
+    font-size: medium;
+    color: #000000;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: none; 
+  }
+  
+  .hero {
+    top: 0;
+    background-color: #3E309E; 
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+    color: #fff;
+  }
+  .tagline-bar {
+    background-color: #C1445A;
+    text-align: center;
+    padding: 0.75rem 1rem;
+    padding-top: 22px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    margin-top: -22px;
+  }
+  
+  .services {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .services h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 2rem;
+  }
+  
+  .gold-heading {
+    color: #F7C250;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .service-box {
+    background-color: #fff;
+    color: #000;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .service-box .icon {
+    font-size: 2rem;
+    color: #3E309E;
+    margin-bottom: 0.5rem;
+  }
+  
+/*-------------------- WHY CHOOSE US --------------------*/
+  .why-choose {
+    background-color: #C1445A;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  .why-choose h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .choose-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .choose-box {
+    padding: 1rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .teal-bg {
+    background-color: var(--teal);
+  }
+
+  .lavendar-bg {
+    background-color: var(--lavendar);
+  }
+
+  .yellow-bg {
+    background-color: #F7C250;
+  }
+
+  .white-bg {
+    background-color: #fff;
+    color: #000;
+  }
+  
+/*-------------------- PRICING --------------------*/
+  .pricing {
+    padding: 2rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .pricing h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    justify-items: center;
+  }
+  
+  table {
+    width: 100%;
+    max-width: 280px;
+    border-collapse: collapse;
+    background-color: #fff;
+    color: #000;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  caption {
+    background-color: #F7C250;
+    font-weight: bold;
+    padding: 0.5rem;
+  }
+  
+  th, td {
+    padding: 0.5rem;
+    text-align: left;
+  }
+  
+  thead {
+    background-color: #eee;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+/*-------------------- CALL TO ACTION --------------------*/
+  .cta {
+    background-color: #C1445A;
+    padding: 2rem 1rem;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .cta h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .cta p {
+    max-width: 600px;
+    margin: 0.5rem auto 1.5rem auto;
+  }
+  
+  .cta-button {
+    background-color: #fff;
+    color: #000;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 7px 4px 5px black;
+}
+
+.cta-button:hover {
+    background-color: #000000;
+    color: white;
+}
+  
+/*-------------------- FOOTER --------------------*/
+  .footer {
+    background-color: #3E309E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .footer p, .footer a {
+    font-size: 0.9rem;
+  }
+  
+  @media screen and (min-width: 450px) {
+    .nav-links {
+      display: none;
+    }
+    .navbar {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: #E5C04D; 
+      border-bottom-left-radius: 16px;
+      padding: 2px 2px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      z-index: 1000;
+  }
+    .menu-button {
+      display: flex;
+    }
+  }
+  
+/*-------------------- MEDIA QUERY (medium) ------------------------------*/
+
+  @media screen and (min-width: 620px) {
+    .nav-links {
+      display: none;
+    }
+    .navbar {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: #E5C04D; 
+      border-bottom-left-radius: 16px;
+      padding: 2px 2px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      z-index: 1000;
+  }
+    .menu-button {
+      display: flex;
+    }
+    .services-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .choose-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .pricing-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+/*-------------------- MEDIA QUERY (large) -------------------------------*/
+  @media screen and (min-width: 950px) {
+    .navbar {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: #E5C04D;
+      border-bottom-left-radius: 16px;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      z-index: 1000;
+  }
+    .cta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+      text-align: left;
+  }
+  
+  .cta-content {
+      flex: 1;
+      text-align: left;
+  }
+  
+  .cta-button {
+    margin-left: 260px;
+    margin-right: 155px;
+  }
+  
+    .nav-links {
+      display: flex;
+    }
+    .menu-button {
+      display: none;
+    }
+  
+    .services-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .choose-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  
+    .pricing-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+/*-------------------- MEDIA QUERY (xl) --------------------------------*/
+  @media screen and (min-width: 1280px) {
+    body {
+      margin-left: 8%;
+      margin-right: 8%;
+    }
+    .navbar {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: #E5C04D;
+      border-bottom-left-radius: 16px;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      z-index: 1000;
+  }
+  
+  .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      padding: 0;
+      margin: 0;
+  }
+  
+  .nav-links li {
+      display: inline;
+  }
+  
+  .nav-links a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+  }
+  .hero {
+      background-color: #3E309E; 
+      width: 75%; 
+      margin: auto; 
+      text-align: center;
+      padding: 4rem 1rem;
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+      position: relative;
+  }
+  
+  .tagline-bar {
+    width: 70%; 
+    margin: auto; 
+    text-align: center;
+    top: 0;
+    margin-bottom: 0;
+  }
+  .cta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.cta-content {
+    flex: 1;
+    text-align: left;
+}
+
+.cta-button {
+  margin-left: 260px;
+  margin-right: 155px;
+}
+}
