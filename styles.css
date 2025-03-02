@@ -75,8 +75,10 @@ table {
     font-family: Arial, sans-serif;
     background-color: #484fb7; 
     color: #FFFFFF;
+    min-width: 450px;
     line-height: 1.4;
   }
+  
   h1, h2, h3, .site-title, .hero-title {
     font-family: 'Kavoon', cursive, sans-serif;
   }
